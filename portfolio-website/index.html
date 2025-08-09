@@ -5,10 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rooney Tatah's portfolio showcasing design, development, and creative work.">
     <meta name="author" content="Rooney Tatah">
-    <title>Rooney Tatah | Portfolio</title>
+    <title>Rooney Ace | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     <script defer src="./js/main.js"></script>
+
+    <style>
+
+                .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 30px;
+            
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .contact-card {
+           
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-item i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #007bff;
+        }
+
+        .email, .number {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .social-links h4 {
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 18px;
+            
+        }
+
+        .social-links a {
+            font-size: 24px;
+            margin: 0 10px;
+         
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+        }
+    </style>
 </head>
 <body>
     <!-- Animated Background -->
@@ -50,14 +137,14 @@
             <h2 class="section-title fade-in">Portfolio</h2>
             <div class="portfolio-grid">
                 <a href="graphic-design.html" class="portfolio-card fade-in">
-                    <img src="c:\Users\Rooney Ace\Downloads\Graphic design.avif" alt="Graphic Design" class="card-image">
+                    <img src="./img/The Ark Tech.jpg" alt="Graphic Design" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Graphic Design</h3>
                         <p class="card-description">Creative visual solutions for digital and print media with modern aesthetics and compelling storytelling.</p>
                     </div>
                 </a>
                 <a href="branding-logo.html" class="portfolio-card fade-in">
-                    <img src="c:\Users\Rooney Ace\Downloads\Branding.avif" alt="Branding & Logo Design" class="card-image">
+                    <img src="./img/Cream and Grey Elegant Aesthetic Minimal Brand Board A4 Document.png" alt="Branding & Logo Design" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Branding & Logo Design</h3>
                         <p class="card-description">Distinctive brand identities that capture essence and elevate business presence in competitive markets.</p>
@@ -71,7 +158,7 @@
                     </div>
                 </a>
                 <a href="ui-ux.html" class="portfolio-card fade-in">
-                    <img src="c:\Users\Rooney Ace\Downloads\UI UX.avif" alt="UI & UX Design" class="card-image">
+                    <img src="./img/Recipe App.png" alt="UI & UX Design" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">UI & UX Design</h3>
                         <p class="card-description">Intuitive interfaces that bridge user needs with business goals through thoughtful design systems.</p>
@@ -85,14 +172,14 @@
                     </div>
                 </a>
                 <a href="digital-art.html" class="portfolio-card fade-in">
-                    <img src="c:\Users\Rooney Ace\Downloads\Digital art.avif" alt="Digital Art" class="card-image">
+                    <img src="./img/AN2.jpg" alt="Digital Art" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Digital Art</h3>
                         <p class="card-description">Original digital artworks and illustrations that blend traditional techniques with modern digital tools.</p>
                     </div>
                 </a>
                 <a href="animation.html" class="portfolio-card fade-in">
-                    <img src="c:\Users\Rooney Ace\Downloads\Animation.avif" alt="Animation" class="card-image">
+                    <img src="./img/AN1.jpg" alt="Animation" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Animation</h3>
                         <p class="card-description">Dynamic 2D and 3D animations that bring stories to life with fluid motion and engaging narratives.</p>
@@ -127,24 +214,28 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
+    
+   <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title fade-in">Let's Create Together</h2>
-            <div class="contact-form fade-in">
-                <div id="form-message" style="display: none; text-align: center; margin-bottom: 20px;"></div>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <input type="text" class="form-input" placeholder="Your Name" required aria-label="Name">
+            <div class="contact-card fade-in">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3 class="email">Rooneyace10@gmail.com</h3>
                     </div>
-                    <div class="form-group">
-                        <input type="email" class="form-input" placeholder="your-email@example.com" required aria-label="Email">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h4 class="number">+237 653 156 598</h4>
                     </div>
-                    <div class="form-group">
-                        <textarea class="form-input" rows="5" placeholder="Tell me about your project..." required aria-label="Message"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+                </div>
+                <div class="social-links">
+                    <h4>Connect with me:</h4>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                </div>
             </div>
         </div>
     </section>
@@ -152,7 +243,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Rooney Tatah. Crafted with passion and innovation. Images from <a href="https://unsplash.com" target="_blank">Unsplash</a>.</p>
+            <p>&copy; Rooney Ace </p>
         </div>
     </footer>
 
