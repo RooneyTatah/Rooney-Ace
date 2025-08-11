@@ -3,6 +3,8 @@ const toggleHamburger = () => {
     const hamburger = document.querySelector('.hamburger');
     const navList = document.querySelector('.nav-list');
     hamburger.addEventListener('click', () => {
+        console.log('Hamburger clicked');
+        console.log('Current navList :', navList);
         navList.classList.toggle('active');
         const icon = hamburger.querySelector('i');
         icon.classList.toggle('fa-bars');

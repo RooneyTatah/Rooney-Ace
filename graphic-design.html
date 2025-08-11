@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graphic Design | Rooney Tatah Portfolio</title>
+    
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     <script defer src="./js/main.js"></script>
     <style>
@@ -16,39 +18,11 @@
             line-height: 1.6;
         }
 
-        .hamburger {
-            display: none;
-            background: none;
-            border: none;
-            color: #fff;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-        .nav-list {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-        }
-        .nav-link {
-            color: #fff;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        .nav-link:hover {
-            color: #93c5fd;
-        }
+
         .section {
             padding: 4rem 0;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
+
         .section-title {
             text-align: center;
             font-size: 2.5rem;
@@ -88,52 +62,24 @@
             margin: 0 1rem 1.5rem;
             color: #e5e7eb;
         }
-        .footer {
-            background: #1e3a8a;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        .footer p {
-            margin: 0;
-            font-size: 1rem;
-        }
-        @media (max-width: 768px) {
-            .hamburger {
-                display: block;
-            }
-            .nav-list {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                right: 0;
-                background: rgba(0, 0, 0, 0.9);
-            }
-            .nav-list.active {
-                display: flex;
-            }
-            .nav-link {
-                padding: 1rem;
-                text-align: center;
-            }
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+  
+
     </style>
 </head>
 <body>
+ <!-- Animated Background -->
+    <div class="particles" id="particles"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <button class="hamburger" aria-label="Toggle Menu">
             <i class="fas fa-bars"></i>
         </button>
         <ul class="nav-list">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
     <section class="section">
@@ -164,10 +110,6 @@
             <p>&copy; Rooney Ace</p>
         </div>
     </footer>
-    <script>
-        document.querySelector('.hamburger').addEventListener('click', () => {
-            document.querySelector('.nav-list').classList.toggle('active');
-        });
-    </script>
+
 </body>
 </html>
